@@ -1,0 +1,7 @@
+create table pc_menu (
+   menu_no number(2),
+   type varchar2(20),
+   menu_name varchar2(50),
+   menu_price number(4),
+   primary key(menu_no)
+);
