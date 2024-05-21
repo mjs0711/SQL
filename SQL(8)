@@ -1,0 +1,6 @@
+select * from pc_use;
+
+select e,name, e.job, sum(u.total)
+from pc_use u join pc_emp e
+on u.name = e.name
+group by e.name, e.job;
