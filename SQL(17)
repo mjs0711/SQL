@@ -1,0 +1,4 @@
+select *
+from pc_use inner join pc_emp
+on pc_ise.name = pc_emp.anme
+order by pc_menu;
