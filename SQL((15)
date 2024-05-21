@@ -1,0 +1,4 @@
+select department_id, job_id, round(avg(salary))
+from employees
+group by grouping sets(department_id, job_id)
+order by department_id;
