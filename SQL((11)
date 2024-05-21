@@ -1,0 +1,7 @@
+select *
+from pc_member
+where birth < any (
+                    select birth
+                    from pc_member
+                    where name='김태호'
+                    );
