@@ -1,0 +1,2 @@
+select * from pc_use;
+select * from pc_menu;
