@@ -1,0 +1,8 @@
+select e.employee_id, d.department_id,
+    r.region_name
+from employees e, departments d, locations l
+    , countries c, regions r
+where e.department_id = d.department_id
+      and d.location_id = c.location_id
+      and l.country_id = e.country_id
+      and c.region_id = r.region_id;
