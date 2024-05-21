@@ -1,0 +1,5 @@
+select u.fd1, count(u.fd1) 주문수량, m.menu_name
+from pc_use u join pc_menu m
+on u.fd1 = m.menu_no
+group by u.fd1, m.menu_name
+order by count(u.fd1) desc;
