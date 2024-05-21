@@ -1,0 +1,10 @@
+create table pc_emp (
+   emp_no number(2),
+   name varchar(10),
+   job varchar2(10),
+   birth date,
+   tel number(11),
+   address varchar2(100),
+   sal number(10),
+   primary key(emp_no)
+);
