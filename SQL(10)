@@ -1,0 +1,7 @@
+select *
+from pc_member
+where gender = (
+                select gender
+                from pc_member
+                where name='곽권'
+                );
