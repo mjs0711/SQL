@@ -1,0 +1,7 @@
+select *
+from pc_emp
+where job = (
+             select job
+             from pc_emp
+             where name = '이윤건'
+             );
