@@ -1,0 +1,16 @@
+create table pc_use (
+   id varchar2(20),
+   start_time number(4),
+   end_time number(4),
+   add_time number(2),
+   fd1 number(2),
+   fd1_price number(4),
+   fd2 number(2),
+   fd2_price number(4),
+   fd3 number(2),
+   fd3_price number(4),
+   total number(6),
+   order_time number(4),
+   name varchar2(10),
+   primary key(id, start_time)
+);
