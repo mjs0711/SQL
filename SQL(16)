@@ -1,0 +1,5 @@
+select decode(grouping(department_id), 0, to_char(department_id), 1, '직급별 그룹'),
+    decode(grouping(job_id), 1, '부서별 그룹', 1, job_id),
+    round(avg(salary)),grouping(department_id), grouping(job_id)
+from employees
+group by grouping sets(department_id, job_id);
