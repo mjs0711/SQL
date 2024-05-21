@@ -1,0 +1,2 @@
+select id, name, emp_no
+from pc_use natural join pc_emp;
