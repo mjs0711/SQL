@@ -1,0 +1,3 @@
+select u.id, u.fd1, m.menu_no, m.meni_name
+from pc_use u inner join pc_menu m
+on u.fd1 = m.menu_no;
