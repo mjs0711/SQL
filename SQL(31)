@@ -1,0 +1,8 @@
+select salary
+from employees
+where salary in (select salary
+                 from employees
+                 where department_id = ( select department_id
+                                         from employees
+                                         where first_name = 'Guy'
+                                         ));
