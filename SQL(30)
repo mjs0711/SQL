@@ -1,0 +1,7 @@
+
+select *
+from employees
+where department_id = ( select department_id
+                        from employees
+                        where first_name = 'GUY'
+                        );
