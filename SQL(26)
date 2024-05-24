@@ -1,0 +1,3 @@
+select *
+from employees
+where salary < 6461.03;
