@@ -1,0 +1,3 @@
+update employees
+set salary = 20000
+where last_name = 'bear';
